@@ -13,9 +13,9 @@ def crazy(message):
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
-    btn1 = types.KeyboardButton('Где можно найти клад'+emoji.emojize(":thumbs_up:"))
-    btn2 = types.KeyboardButton('Наше меню')
-    btn3 = types.KeyboardButton('Способ оплаты')
+    btn1 = types.KeyboardButton('КАЛАБАНГА'+emoji.emojize(":thumbs_up:"))
+    btn2 = types.KeyboardButton('ФЛАМИНГО')
+    btn3 = types.KeyboardButton('МАЗАФАКА')
     btn4 = types.KeyboardButton('Часто задаваемые вопросы')
     markup.add(btn1, btn2, btn3, btn4)
     send_mess = f"*Привет {message.from_user.first_name}*\nЧто тебя интересует?"
@@ -24,7 +24,7 @@ def start(message):
 
 @bot.message_handler(commands=['website'])
 def website(message):
-    bot.send_message(message.chat.id, "Ваша ссылка: (https://www.youtube.com)", parse_mode='Markdown')
+    bot.send_message(message.chat.id, "Ваша ссылка: (https://konoplisemena.com)", parse_mode='Markdown')
 
 
 bot.polling(none_stop=True)
