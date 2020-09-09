@@ -18,7 +18,7 @@ def start(message):
     btn3 = types.KeyboardButton('МАЗАФАКА')
     btn4 = types.KeyboardButton('Часто задаваемые вопросы')
     markup.add(btn1, btn2, btn3, btn4)
-    send_mess = f"*Привет {message.from_user.first_name}*\nЧто тебя интересует?"
+    send_mess = f"*Привет {message.from_user.first_name}*\nРежим паранойи?"
     bot.send_message(message.chat.id, send_mess, parse_mode="Markdown", reply_markup=markup)
 
 
